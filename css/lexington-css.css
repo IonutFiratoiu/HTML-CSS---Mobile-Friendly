@@ -1,0 +1,1220 @@
+html {
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+@font-face {
+       font-family: "futura-book";
+       src: url("../fonts/futura_book.eot?v=1");
+       src: url("../fonts/futura_book.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/futura_book.ttf?v=1") format("truetype"),
+       url("../fonts/futura_book.woff?v=1") format("woff");
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+       font-family: "futura-heavy";
+       src: url("../fonts/futura_heavy.eot?v=1");
+       src: url("../fonts/futura_heavy.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/futura_heavy.ttf?v=1") format("truetype"),
+       url("../fonts/futura_heavy.woff?v=1") format("woff");
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+       font-family: "gill-sans-bold";
+       src: url("../fonts/gill_sans_bold.eot?v=1");
+       src: url("../fonts/gill_sans_bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/gill_sans_bold.ttf?v=1") format("truetype");
+       font-weight: normal;
+       font-style: normal;
+}
+
+.btn, .primary-menu li a, .subnav p, .expert-header h2, 
+.expert .expert-opinions .expertop.expertlast .art-opinions-header, .services h2,
+ .case-studies .case-header h2, .testimonials .testimonials-header h2, .ftr .contact h2, 
+ .ftr .newsletter h2, .ftr .footer-content .help li a, .ftr .footer-content p {
+	font-family: 'Cabin';
+}
+
+.primary-menu .subnav ul li a, .expert .expert-art p, .expert .expert-art .art-footer .mainop .job,
+ .expert .expert-opinions .expertop .expert-center span, .expert .expert-opinions .expertop .art-opinions-footer .job,
+ .expert .expert-opinions .expertop.expertlast span, .expert .expert-opinions .expertop.expertlast a,
+ .expert .expert-opinions .expertop.expertlast .art-opinions-footer .job, .services p, 
+ .servmobile p, .case-studies p, .case-studies .case-content .case p, .testimonials .testimonial .test-content,
+ .testimonials .testimonial .test-footer,.ftr .contact p, .ftr .newsletter p, .ftr .newsletter form .newsletter-input {
+	font-family: "futura-book";
+}
+
+.header-content h2, .header-content h2, .expert .expert-art .expert-title,
+ .expert .expert-art .art-footer .mainop span, .expert .expert-opinions .expertop p,
+ .expert .expert-opinions .expertop .art-opinions-footer span, 
+ .expert .expert-opinions .expertop.expertlast .art-opinions-footer span, 
+ .case-studies .case-content .case h4, .ftr .contact p span {
+	font-family: "futura-heavy";
+}
+
+.expert .expert-opinions .expertop.expertlast a, .testimonials .testimonial .test-footer {
+	font-style: italic;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.lexington {
+	box-sizing: border-box;
+	background: url(../imagini/background.jpg) no-repeat 0 0;
+	width: 100%;
+	padding: 3% 3% 0 3%;
+	background-position: center 0;
+	background-size: cover;
+	position: relative;
+
+}
+
+.header-content {
+	width: 60%;
+	margin: 0 auto 20px auto;
+}
+
+.lexington h2 {
+	text-align: center;
+	margin: 15% auto 2% auto;
+	color: #fff;
+	font-size: 5em;
+}
+
+.lexington p {
+ 	text-align: center;
+ 	color: #fff;
+ 	font-size: 2em;
+ 	padding: 0 0 2% 0;
+ 	margin: 0;
+}
+
+.header-logo {
+	float: left;
+	position: relative;
+	z-index: 4;
+}
+
+.primary-menu-mobile {
+	padding: 1%;
+	background: transparent;
+	color: #fff;
+	font-size: 1.4em;
+	float: right;
+	display: none;
+	border: 2px solid #fff;
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	z-index: 2;
+}
+
+.primary-menu-mobile-close {
+	padding: 1%;
+	background: #5f5b79;
+	color: #fff;
+	font-size: 1.4em;
+	float: right;
+	display: none;
+	border: 2px solid #fff;
+	position: absolute;
+	right: 10%;
+	top: 7%;
+	z-index: 5;
+}
+
+.primary-menu {
+	float: right;
+	z-index: 4;
+	padding: 0;
+}
+
+.primary-menu li a {
+	text-decoration: none;
+	color: #f8f2ee;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.mainli {
+	display: inline-block;
+	padding: 2%;
+	text-align: center;
+	float: left;
+}
+
+.subnav {
+	display: none;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 100%;
+	color: #fff;
+}
+
+.mainli:after {
+	content: "";
+	display: block;
+	border-bottom: 3px solid #acb285;
+	width: 6px;
+	margin: 0 auto;
+	margin-top: 5px;
+	visibility: hidden;
+}
+
+.mainli:hover:after {
+	visibility: visible;
+}
+
+.subnav-a {
+	display: inline-block;
+	padding: 2%;
+	text-align: center;
+	z-index: 2;
+	float: left;
+}
+
+.subnav-a:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(64,64,84,0.1);
+	z-index: -1;
+	pointer-events: none;
+	height: 100%;
+}
+
+.subnav-a:hover:after {
+	z-index: 1;
+	background: rgba(64,64,84,0.9);
+}
+
+.subnav-a:hover {
+	display: inline-block;
+	vertical-align: middle;
+	box-shadow: 0 0 1px #5f5b79;
+	background-color: #5f5b79;
+}
+
+.primary-menu li:hover .subnav {
+	display: block;
+	z-index: 2;
+}
+
+.sectors, .subnavservices {
+	box-sizing: border-box;
+	width: 30%;
+	margin: 2% 10px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+
+.sectors p {
+	color: #5f5b79;
+	background-color: #fff;
+	text-align: left;
+	padding: 2%;
+}
+
+.subnavservices p {
+	color: #fff;
+	background-color: #5f5b79;
+	text-align: left;
+	padding: 2%;
+}
+
+.subnav ul {
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.subnav li {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	line-height: 250%;
+}
+
+.subnav li:nth-child(even) {
+	margin-right: 0;
+}
+
+.subnav li a {
+	font-size: 1.3em;
+}
+
+/* EXPERT */
+
+.btn {
+	color: #fff;
+	background-color: #acb285;
+	padding: 4%;
+	font-size: 1.2em;
+}
+
+.expert {
+	box-sizing: border-box;
+	padding: 3%;
+	width: 100%;
+	background: #e3e2e1;
+}
+
+.expert-header h2 {
+	font-size: 1.5em;
+	color: #5f5b79;
+}
+
+.expert-header-text {
+	float: left;
+}
+
+.expert-header-text:after {
+	content: "";
+	display: block;
+	border: 2px solid #5f5b79;
+	margin: 5px auto 0 auto;
+	width: 120%;
+}
+
+.expert-header-opinions {
+	float: right;
+}
+
+.expert-header .btn {
+	padding: 1%;
+}
+
+.expert .expert-art .art-header span {
+	padding: 1%;
+}
+
+.expert .expert-art .art-header .art-htitle {
+	background: #4b4b49;
+	color: #fff;
+}
+
+.expert .expert-art .art-header .art-htime {
+	color: #b2b2b2;
+}
+
+.expert-art {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	padding: 3% 3% 0 0;
+}
+
+.expert-art .art-header span {
+	display: inline-block;
+	float: left;
+	font-family: "futura-book";
+	font-size: 1.2em;
+}
+
+.expert-art .art-header .art-htitle {
+	font-family: "futura-heavy";
+	font-size: 1.3em;
+}
+
+.expert-art .art-header .art-htime {
+	float: right;
+	font-size: 1.3em;
+}
+
+.expert-art .expert-title {
+	font-size: 3.3em;
+	color: #4b4b49;
+}
+
+.expert-art p {
+	font-size: 2em;
+	color: #444444;
+}
+
+.art-footer span {
+	font-size: 1.3em;
+}
+
+.expert-opinions {
+	box-sizing: border-box;
+	float: right;
+	width: 50%;
+	padding: 3% 0 3% 0;
+}
+
+.expert-opinions p {
+	font-size: 2.3em;
+	margin: 0;
+	padding: 0;
+}
+
+.expert-opinions span {
+	font-size: 1.1em;
+}
+
+.expert-opinions .time {
+	font-size: 1.3em;
+}
+
+.expertop, .expertlast {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 47%;
+	float: left;
+	height: 190px;
+	padding: 2%;
+	margin: 0 3% 15px 0;
+	background: #fff;
+}
+
+.expertlast {
+	padding: 0;
+}
+
+.expertlast .latesttweet-content {
+	padding: 0 4%;
+}
+
+.expert-center {
+	padding-top: 3%;
+	text-align: center;
+}
+
+.expert-center span {
+	float: left;
+}
+
+.expert-center .btn {
+	padding: 2%;
+	float: right;
+}
+
+.expert-center .time {
+	margin-left: 30%;
+}
+
+.art-opinions-footer {
+	padding-top: 4px;
+	margin-top: 10px;
+}
+
+.expert2 .art-opinions-footer {
+	padding-top: 13%;
+}
+
+.expertop .art-opinions-footer img {
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.art-opinions-header {
+	margin-bottom: 7px;
+}
+
+.latesttweet {
+	padding: 1%;
+	background: #5f5b79; 
+	color: #fff;
+}
+
+.latesttweet1 {
+	float: left;
+}
+
+.latesttweet2 {
+	float: right;
+}
+
+.expertop.expertlast a {
+	color: #9aa16c;
+}
+
+.expertop .expert-center .time {
+	color: #bdbdbd;
+}
+
+.expertop .art-opinions-footer .job {
+	color: #8b8b8b;
+}
+
+.expert-art .art-footer img {
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.expert-art .art-footer {
+	position: relative;
+}
+
+.expert-art .art-footer .mainop {
+	display: inline-block;
+	margin: 0 5%;
+}
+
+.expert-art .art-footer .mainop span {
+	display: block;
+}
+
+.expert-art .art-footer .mainop .job {
+	color: #8b8b8b;
+}
+
+.expert-art .art-footer .btn {
+	padding: 2%;
+	float: right;
+	transform: translateY(100%);
+}
+
+.op1, .op2, .op3, .op4, .op5 {
+	display: inline-block;
+	font-size: 1.3em;
+}
+
+/* SERVICES */
+
+.services {
+	box-sizing: border-box;
+	padding: 3%;
+	background: #2c2b2b;
+	color: #fff;
+}
+
+.services p {
+	font-size: 2.3em;
+}
+
+.services h2 {
+	font-size: 1.5em;
+}
+
+.services h2:after {
+	content: "";
+	display: block;
+	border: 2px solid #fff;
+	margin: 5px 0 0 0;
+	width: 10%;
+}
+
+.service-type .servmobile p {
+	font-size: 1.7em;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 20px;
+	margin: 0;
+}
+
+.service-type .servmobile .btn {
+	padding: 4%;
+	display: inline-block;
+	margin: 20px 0;
+}
+
+.servimg {
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+
+.service-type {
+	box-sizing: border-box;
+	width: 23%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	margin: 0 0.8% 15px 0;
+}
+
+.service-type .servmobile {
+	background-color: #6e6a84;
+	width: 60%;
+	opacity: 0.9;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* CASE */
+
+.case-studies {
+	box-sizing: border-box;
+	padding: 3%;
+	width: 100%;
+	background: #e3e2e1;
+}
+
+.case-header h2 {
+	float: left;
+	font-size: 1.5em;
+	color: #5f5b79;
+}
+
+.case-header h2:after {
+	content: "";
+	display: block;
+	border: 2px solid #5f5b79;
+	margin: 5px auto 0 auto;
+	width: 120%;
+}
+
+.case-header a {
+	padding: 1%;
+	float: right;
+}
+
+.case-content {
+	text-align: left;
+	vertical-align: middle;
+}
+
+.case-studies p {
+	font-size: 2.3em;
+	color: #4b4b49;
+}
+
+.case-content h4 {
+	font-size: 2.3em;
+	color: #4b4b49
+}
+
+.case-content p {
+	font-size: 1.7em;
+	color: #444444;
+}
+
+.case-content .case {
+	box-sizing: border-box;
+	width: 32%;
+	display: inline-block;
+	float: left;
+	margin-right: 1%;
+	vertical-align: middle;
+}
+
+.case-content .case img {
+	width: 100%;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #444257;
+}
+
+.testimonial {
+	box-sizing: border-box;
+	width: 27%;
+	display: inline-block;
+	float: left;
+	margin-left: 3%;
+}
+
+.testimonials-header h2 {
+ 	font-size: 1.5em; 
+ 	color: #fff;
+}
+
+.testimonials-header h2:after {
+	content: "";
+	display: block;
+	border: 2px solid #fff;
+	margin: 5px 0 0 0;
+	width: 10%;
+}
+
+.testimonial .test-content {
+	font-size: 2em;
+	position: relative;
+	padding: 4%;
+	font-style: italic;
+	color: #fff;
+}
+
+.testimonial .test-content:before {
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+	content: "\201C";
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+	top: 16%;
+	left: -18%;
+}
+
+.testimonial .test-content:after {
+	content: "";
+	display: block;
+	border: 6px solid #5f5b79;
+	height: 65%;
+	position: absolute;
+	top: 22%;
+	left: -12%;
+}
+
+.test-footer p {
+	font-size: 1.5em;
+	color: #acb285;
+}
+
+.test-footer .test-footer-name {
+	color: #fff;
+}
+
+/* FOOTER */
+
+.ftr {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 4%;
+	background: #5f5b79;
+	color: #fff;
+}
+
+.ftr .contact h2, .ftr .newsletter h2, .ftr .contact p, .ftr .newsletter p, .ftr .newsletter-input {
+	font-size: 1.5em;
+}
+
+.contact, .newsletter, .footer-content {
+	box-sizing: border-box;
+	width: 25%;
+}
+
+.ftr .contact h2:after {
+	content: "";
+	display: block;
+	border: 2px solid #fff;
+	margin: 5px 0 0 0;
+	width: 30%;
+}
+
+.ftr .newsletter h2:after {
+	content: "";
+	display: block;
+	border: 2px solid #fff;
+	margin: 5px 0 0 0;
+	width: 30%;
+}
+
+.contact, .newsletter {
+	margin-right: 4%;
+	float: left;
+	text-align: left;
+}
+
+.footer-content {
+	float: right;
+	text-align: right;
+}
+
+.contact p, .newsletter p {
+	padding-top: 25px;
+}
+
+.contact .btn {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.contact .btn, .newsletter form .btn {
+	padding: 3%;
+}
+
+.newsletter form .btn {
+	border: none;
+	margin-left: 4%;
+}
+
+.newsletter form {
+	margin-top: 20px;
+}
+
+.newsletter-input {
+	background: #444257;
+	border: none;
+	border-bottom: 2px solid #fff;
+}
+
+.help {
+	margin: 20px 0;
+}
+
+.help li a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.footer-content p {
+	color: #fff;
+}
+
+/* ==================================================================================
+	================================================================================
+                MEDIA QUERRY 
+    ================================================================================
+  ==================================================================================*/
+
+  @media screen and (max-width: 767px) {
+
+  	html {
+  		font-size: 62.5%;
+  		margin: 0;
+  		padding: 0;
+  	}
+
+  	.lexington {
+  		box-sizing: border-box;
+  		background: url(../imagini/background-mobile.jpg) no-repeat 0 0;
+  		width: 100%;
+  		background-size: cover;
+  		padding: 4%;
+  	}
+
+  	.header-logo {
+  		display: none;
+  	}
+
+  	.lexington-header-logo {
+  		background: url("../imagini/mobile-logo.png") no-repeat 0 0;
+  		width: 100px;
+  		height: 19px;
+  		display: block;
+  		float: left;
+  		position: relative;
+  	}
+
+  	.primary-menu {
+  		display: none; 
+  	}
+
+  	.primary-menu-mobile {
+  		float: right;
+  		display: block;
+  	}
+
+  	.header-content {
+  		display: inline-block;
+  		margin: 10px auto 20px auto;
+  		width: 100%;
+  	}
+
+  	.header-content h2 {
+  		font-size: 2.5em;
+  		margin: 10px auto 8px auto;
+  	}
+
+  	.header-content p {
+  		font-size: 1.8em;
+  	}
+
+  	.expert, .expert-header, .expert article, .expert-opinions, .expertop, .expertlast, 
+  .service-type, .case-studies, .case-header, .case-content, 
+  .testimonials, .testimonials-header, .testimonial {
+  		display: block;
+  		width: 100%;
+  		float: none;
+  	}
+
+  	.case-content {
+  		width: 100%;
+  	}
+
+  	.case-content .case {
+  		display: inline-block;
+  		width: 100%;
+  		float: none;
+  		margin-bottom: 5px;
+  	}
+
+  	.case-header h2 {
+  		float: none;
+  	}
+
+  	.case-content .case .btn {
+  		padding: 2%;
+  		float: right;
+  	}
+
+  	.service-type img {
+  		width: 110px;
+  		float: left;
+  		display: block;
+  		vertical-align: middle;
+  	}
+
+  	.service-type {
+  		width: 100%;
+  		padding: 3%;
+  		background: #6e6a84;
+  		opacity: 0.9;
+  	}
+
+  	.service-type .servmobile {
+  		display: inline-block;
+  		background: none;
+  		left: 0;
+  		position: relative;
+  		width: 50%;
+  		transform: translate(0);
+  	}
+
+  	.service-type .servmobile p {
+  		padding-top: 10px;
+  	}
+
+  	.service-type .servmobile .btn {
+  		margin: 10px 0;
+  	} 
+
+  	.testimonial {
+  		width: 100%;
+  		margin: 0 auto;
+  	}
+
+  	.testimonial p {
+  		margin-left: 10%;
+  		padding-left: 10%;
+  	}
+
+  	.testimonial p:before {
+  		top: 25%;
+  		left: -10%;
+  	}
+
+  	.testimonial p:after {
+  		height: 50%;
+  		top: 30%;
+  		left: -6%;
+  	}
+
+  	.contact, .newsletter, .footer-content {
+  		width: 100%;
+  		text-align: center;
+  	}
+
+  	.newsletter form .btn {
+  		margin-left: 0;
+  	}
+
+  	.footer-content {
+  		margin-top: 10px;
+  		display: inline-block;
+  	}
+
+  	.footer-content .help {
+  		float: left;
+  		text-align: left;
+  		display: inline-block;
+  	}
+
+  	.footer-content img {
+  		float: right;
+  		margin-top: 10px;
+  		display: inline-block;
+  	}
+
+  	.footer-content p {
+  		text-align: center;
+  	}
+
+  	.expert-header, .services h2, .case-header, .testimonials-header {
+  		text-align: center;
+  		float: none;
+  	}
+
+  	.expert-header-text, .expert-header-opinions, .case-header a {
+  		float: none;
+  	}
+
+  	.expert-header-opinions, .casebtn {
+  		background: none;
+  		color: #acb285;
+  	}
+
+  	.expert-header-text:after {
+		content: "";
+		display: block;
+		border: 2px solid #5f5b79;
+		margin: 5px auto 0 auto;
+		width: 30%;
+	}
+
+	.expert article {
+		margin-bottom: 10px;
+	}
+
+	.services h2:after {
+		content: "";
+		display: block;
+		border: 2px solid #fff;
+		margin: 5px auto 0 auto;
+		width: 30%;
+	}
+
+	.case-header h2:after {
+		content: "";
+		display: block;
+		border: 2px solid #5f5b79;
+		margin: 5px auto 0 auto;
+		width: 30%;
+	}
+
+	.testimonials-header h2:after {
+		content: "";
+		display: block;
+		border: 2px solid #fff;
+		margin: 5px auto 0 auto;
+		width: 30%;
+	}
+
+	.ftr .contact h2:after {
+		content: "";
+		display: block;
+		border: 2px solid #fff;
+		margin: 5px auto 0 auto;
+		width: 30%;
+	}
+
+	.ftr .newsletter h2:after {
+		content: "";
+		display: block;
+		border: 2px solid #fff;
+		margin: 5px auto 0 auto;
+		width: 30%;
+	}
+
+	#mobile:target {
+		display: block;
+	}
+
+	.primary-menu {
+		padding: 60px 0 0 0;
+		display: none;
+		background: #5f5b79;
+		float: none;
+		width: 100%;
+		top: -5px;
+		left: 0;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.primary-menu li {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 25%;
+		vertical-align: middle;
+	}
+
+	#mobile:target .primary-menu-mobile-close {
+		float: right;
+		display: block;
+		z-index: 4;
+	}
+
+	.lexington-header-logo {
+		position: relative;
+		z-index: 5;
+	}
+
+	.mainli:after, .mainli:before, .subnav-a:after, .subnav-a:before {
+		content: "";
+		display: block;
+		border-bottom: 3px solid #acb285;
+		width: 6px;
+		position: relative;
+		visibility: hidden;
+	}
+
+	.mainli:after, .subnav-a:after {
+		float: right;
+	}
+
+	.subnav-a:after {
+		margin: 6px 0 0 0;
+	}
+
+	.mainli:before, .subnav-a:before {
+		margin: 5px 0 0 0;
+		float: left;
+	}
+
+	.mainli:hover:after, .subnav-a:hover:after {
+		visibility: visible;
+	}
+
+	.mainli:hover:before, .subnav-a:hover:before {
+		visibility: visible;
+	}
+
+	.subnav-a:hover {
+		display: block;
+	}
+
+	.primary-menu li:hover .subnav {
+		display: none;
+	}
+
+  }
+
+  /* ==================================================================================
+	================================================================================
+                MEDIA QUERRY 
+    ================================================================================
+  ==================================================================================*/
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	html {
+  		font-size: 62.5%;
+  		margin: 0;
+  		padding: 0;
+  	}
+
+  	.header-logo {
+  		position: relative;
+  		z-index: 5;
+  	}
+
+	.primary-menu {
+  		display: none; 
+  	}
+
+  	.primary-menu-mobile {
+  		float: right;
+  		display: block;
+  	}
+
+	#mobile:target {
+		display: block;
+	}
+
+	.primary-menu {
+		padding: 80px 0 0 0;
+		display: none;
+		background: #5f5b79;
+		float: none;
+		width: 100%;
+		top: -5px;
+		left: 0;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.primary-menu li {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 25%;
+		vertical-align: middle;
+	}
+
+	#mobile:target .primary-menu-mobile-close {
+		float: right;
+		display: block;
+		z-index: 4;
+	}
+
+	.lexington-header-logo {
+		position: relative;
+		z-index: 5;
+	}
+
+	.mainli:after, .mainli:before, .subnav-a:after, .subnav-a:before {
+		content: "";
+		display: block;
+		border-bottom: 3px solid #acb285;
+		width: 6px;
+		position: relative;
+		visibility: hidden;
+	}
+
+	.mainli:after, .subnav-a:after {
+		float: right;
+	}
+
+	.subnav-a:after {
+		margin: 6px 0 0 0;
+	}
+
+	.mainli:before, .subnav-a:before {
+		margin: 5px 0 0 0;
+		float: left;
+	}
+
+	.mainli:hover:after, .subnav-a:hover:after {
+		visibility: visible;
+	}
+
+	.mainli:hover:before, .subnav-a:hover:before {
+		visibility: visible;
+	}
+
+	.subnav-a:hover {
+		display: block;
+	}
+
+	.primary-menu li:hover .subnav {
+		display: none;
+	}
+
+	.testimonial {
+		width: 24%;
+	}
+
+	.service-type {
+		width: 32%;
+	}
+
+	.expertop, .expertlast {
+		width: 100%;
+	}
+
+	.ftr .newsletter {
+		width: 30%;
+	}
+
+  }
